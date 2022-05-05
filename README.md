@@ -4,6 +4,9 @@ Test JSON Schema Based Editor
 
 # License
 
+MIT License Copyright (c) 2022 yuyosy
+
+## Credits
 This software contains copyrighted works distributed under the following license.
 
 - [json-editor/json-editor](https://github.com/json-editor/json-editor) ([MIT License](https://github.com/json-editor/json-editor/blob/master/LICENSE))
