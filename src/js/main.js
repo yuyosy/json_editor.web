@@ -4,20 +4,21 @@
 JSONEditor.defaults.theme = 'spectre';
 JSONEditor.defaults.iconlib = 'spectre';
 
-const element = document.getElementById('editor_holder');
+const editor_control = document.getElementById('editor_control');
+const editor_holder = document.getElementById('editor_holder');
 
-const jseditor = new JSONEditor(element, {
-    schema: schema
+const jseditor = new JSONEditor(editor_holder, {
+    schema: schema,
 });
 
 
 // https://github.com/json-editor/json-editor/wiki/Adding-a-SaveAsFile-button
 jseditor.on('ready', function() {
-    var button = jseditor.root.getButton('Save Result As File', 'save', 'Save Result As File'),
-    button_holder = jseditor.root.theme.getHeaderButtonHolder();
-    button_holder.appendChild(button);
-    jseditor.root.header.parentNode.insertBefore(button_holder, jseditor.root.header.nextSibling);
-  
+    var button = jseditor.root.getButton('Save Result As File', 'save', 'Save Result As File')
+    // button_holder = jseditor.root.theme.getButtonHolder();
+    // button_holder.appendChild(button);
+    // jseditor.root.header.parentNode.insertBefore(button_holder, jseditor.root.header.nextSibling);
+    editor_control.appendChild(button);
     button.addEventListener('click', function(e) {
       e.preventDefault();
       var example = jseditor.getValue(),
