@@ -1,0 +1,21 @@
+body {
+    margin: .8rem;
+}
+
+#editor_holder {
+    margin: .4rem;
+}
+
+div[data-theme="spectre"] .je-panel {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .1rem;
+}
+
+div[data-theme="spectre"] div[data-schematype]:not([data-schematype="object"]) {
+    background-color: inherit !important;
+}
+
+.cols,
+.columns {
+    margin: .2rem;
+}
