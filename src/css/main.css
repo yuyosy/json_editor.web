@@ -2,8 +2,13 @@ body {
     margin: .8rem;
 }
 
-#editor_holder {
+#editor-holder {
     margin: .4rem;
+}
+
+#schema-textarea {
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 div[data-theme="spectre"] .je-panel {
